@@ -27,14 +27,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen common-padding">
-      <h1 className="text-3xl pt-8 font-bold">All products</h1>
+    <div className="min-h-screen common-padding ">
+      <h1 className="text-5xl pt-20 font-bold text-center">All products</h1>
 
       {error && <p className="text-red-500 text-3xl">Something went wrong!!</p>}
 
       {loading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-8">
-          <div className="min-h-[70vh] border border-amber-400 bg-neutral-700 flex justify-between flex-col gap-4 p-8  transition animate-pulse">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-8 ">
+          <div className="min-h-[70vh] border border-amber-400 bg-neutral-800 flex justify-between flex-col gap-4 p-8  transition animate-pulse">
             <div className="md:w-[28vw] h-auto"></div>
             <div className="mb-2">
               <div className="flex gap-2">
@@ -115,13 +115,13 @@ function ProductCard({ product }) {
   return (
     <Link
       to={`product/${product.id}`}
-      className="min-h-[70vh] border border-amber-400 flex justify-between flex-col gap-4 p-8 hover:bg-neutral-200 transition"
+      className="min-h-[70vh] border border-amber-400 flex justify-between flex-col gap-4 p-8"
     >
-      <img src={product.thumbnail} alt="" className="md:w-[28vw] h-auto" />
+      <img src={product.thumbnail} alt="" className="md:w-[28vw] h-auto shadow-xl  hover:bg-neutral-200 transition" />
       <div>
         <div className="flex justify-between">
-          <p>{product.title}</p>
-          <p>$ {product.price}</p>
+          <p className="text-1xl">{product.title}</p>
+          <p className="border-1 p-1 bg-blue-200 rounded-sm">$ {product.price}</p>
         </div>
         <p>{product.rating} / 5</p>
       </div>

@@ -38,14 +38,16 @@ const Product = () => {
       ) : (
         <>
           <div className="w-full flex gap-4 flex-col md:flex-row mt-8">
-            <div className="w-1/2">
-              <img src={product.thumbnail} alt="" className="w-full" />
+            <div className="w-1/2 pt-20">
+              <img src={product.thumbnail} alt="" className="w-90 ml-50 pb-15" />
             </div>
 
             <div className="w-1/2 flex flex-col gap-8">
-              <p className="text-3xl text-bold ">{product.title}</p>
-              <p className="text-sm text-neutral-800">{product.description}</p>
+              <p className="text-4xl font-bold pt-20">{product.title}</p>
+              <p className="text-lg text-neutral-900">{product.description}</p>
+              <p className="text-3xl text-bold text-blue-800">{product.warrantyInformation}</p>
               <p className="text-3xl text-bold ">$ {product.price}</p>
+              <p className="text-2xl text-green-600">discount Percentage: {product.discountPercentage} %</p>
             </div>
           </div>
 
