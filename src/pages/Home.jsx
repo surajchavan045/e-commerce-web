@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen common-padding ">
-      <h1 className="text-5xl pt-20 font-bold text-center">All products</h1>
+      <h1 className="text-5xl pt-20 font-bold text-center font-mono">All products</h1>
 
       {error && <p className="text-red-500 text-3xl">Something went wrong!!</p>}
 

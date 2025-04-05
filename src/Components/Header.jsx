@@ -34,12 +34,12 @@ const Header = () => {
         to="/"
         className="text-2xl font-bold text-violet-600 hover:text-violet-950 hover:text-3xl transition "
       >
-        SS.
+        Product Shoppy
       </Link>
       <input
         type="search"
         placeholder="Search product"
-        className="border rounded-sm text-black border-black hover:to-blue-50 "
+        className="border rounded-md text-black border-black hover:to-blue-50 bg-white p-1"
         onChange={(e) => setSearchValue(e.target.value)}
         value={searchValue}
       />

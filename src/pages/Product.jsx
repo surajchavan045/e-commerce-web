@@ -44,10 +44,10 @@ const Product = () => {
 
             <div className="w-1/2 flex flex-col gap-8">
               <p className="text-4xl font-bold pt-20">{product.title}</p>
-              <p className="text-lg text-neutral-900">{product.description}</p>
+              <p className="text-lg text-neutral-500">{product.description}</p>
               <p className="text-3xl text-bold text-blue-800">{product.warrantyInformation}</p>
-              <p className="text-3xl text-bold ">$ {product.price}</p>
-              <p className="text-2xl text-green-600">discount Percentage: {product.discountPercentage} %</p>
+              <p className="text-3xl text-bold ">Price $ : {product.price}</p>
+              <p className="text-2xl text-green-600">discount Percentage : {product.discountPercentage} %</p>
             </div>
           </div>
 
